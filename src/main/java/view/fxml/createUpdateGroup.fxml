@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!-- View for creating new groups and updating existing ones -->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.CreateUpdateGroupController">
+    <Label layoutX="51.0" layoutY="50.0" text="Groepbeheer">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Button fx:id="newGroupButton" layoutX="428.0" layoutY="460.0" mnemonicParsing="false"
+            onAction="#doCreateUpdateGroup" text="Opslaan">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+    <Button fx:id="menuButton" layoutX="822.0" layoutY="82.0" mnemonicParsing="false"
+            onAction="#doMenu" text="Menu">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+    <Label layoutX="284.0" layoutY="179.0" text="Naam groep:">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="284.0" layoutY="239.0" text="Groepscapaciteit:">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="284.0" layoutY="299.0" text="Cursus:">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="284.0" layoutY="359.0" text="Docent:">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="nameRoleLabel" layoutX="701.0" layoutY="14.0" prefHeight="66.0" prefWidth="185.0"
+           text="Naam">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="284.0" layoutY="112.0" prefHeight="27.0" prefWidth="179.0"
+           text="Voer gegevens in">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <TextField fx:id="groupName" layoutX="425.0" layoutY="179.0" prefHeight="30.0"
+               prefWidth="186.0"/>
+    <TextField fx:id="groupCapacity" layoutX="425.0" layoutY="239.0" prefHeight="30.0"
+               prefWidth="186.0" text="25"/>
+    <ComboBox fx:id="course" layoutX="425.0" layoutY="299.0" prefHeight="30.0" prefWidth="186.0"/>
+    <ComboBox fx:id="teacher" layoutX="425.0" layoutY="359.0" prefHeight="30.0" prefWidth="186.0"/>
+    <Button fx:id="terug" layoutX="557.0" layoutY="460.0" mnemonicParsing="false" onAction="#doBack"
+            text="Terug">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+</AnchorPane>

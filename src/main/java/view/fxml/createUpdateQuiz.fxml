@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateUpdateQuizController">
+   <children>
+      <Label fx:id="titelLabel" layoutX="51.0" layoutY="50.0" text="Quizbeheer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="quizNameLabel" layoutX="283.0" layoutY="204.0" text="Naam">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="createUpdateQuizButton" layoutX="428.0" layoutY="460.0" mnemonicParsing="false" onAction="#doCreateUpdateQuiz" text="Opslaan">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="557.0" layoutY="460.0" mnemonicParsing="false" onAction="#doGoBack" text="Terug">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="quizNameTextfield" layoutX="375.0" layoutY="204.0" prefHeight="26.0" prefWidth="239.0" promptText="geef de naam van quiz" />
+      <Label fx:id="quizNiveauLabel" layoutX="284.0" layoutY="251.0" text="Niveau">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="quizCursusLabel" layoutX="283.0" layoutY="300.0" text="Cursus">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="112.0" prefHeight="27.0" prefWidth="179.0" text="Voer gegevens in">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="quizLevelComboBox" layoutX="376.0" layoutY="251.0" prefHeight="26.0" prefWidth="239.0" promptText="Kies het niveau" />
+      <ComboBox fx:id="quizCourseComboBox" layoutX="375.0" layoutY="300.0" prefHeight="26.0" prefWidth="239.0" promptText="Kies de cursus" />
+      <Button layoutX="822.0" layoutY="82.0" mnemonicParsing="false" onAction="#doMenu" text="Menu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="quizNameLabel1" layoutX="283.0" layoutY="347.0" text="Cesuur">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameRoleLabel" layoutX="701.0" layoutY="14.0" prefHeight="66.0" prefWidth="185.0" text="Naam">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="successDefinitionTextfield" layoutX="375.0" layoutY="349.0" prefHeight="26.0" prefWidth="239.0" promptText="Geef de cesuur" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentSignInOutController">
+
+    <Label fx:id="nameRoleLabel" layoutX="701.0" layoutY="14.0" prefHeight="66.0" prefWidth="185.0" text="Naam">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label layoutX="51.0" layoutY="50.0" text="In- en uitschrijven voor een cursus">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="17.0" layoutY="165.0" text="Selecteer cursussen waar je je voor wilt inschrijven">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Label>
+    <Label layoutX="486.0" layoutY="165.0" text="Selecteer cursussen waar je je voor wilt uitschrijven">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Label>
+
+    <ListView fx:id="signedOutCourseList" layoutX="14.0" layoutY="192.0" prefHeight="200.0" prefWidth="400.0"/>
+    <ListView fx:id="signedInCourseList" layoutX="486.0" layoutY="192.0" prefHeight="200.0" prefWidth="400.0"/>
+
+    <Button layoutX="428.0" layoutY="248.0" mnemonicParsing="false" onAction="#doSignIn" text="-&gt;">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button layoutX="428.0" layoutY="304.0" mnemonicParsing="false" onAction="#doSignOut" text="&lt;-">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button layoutX="822.0" layoutY="82.0" mnemonicParsing="false" onAction="#doMenu" text="Menu">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Button>
+</AnchorPane>

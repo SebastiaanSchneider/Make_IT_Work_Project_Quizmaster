@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.LoginController">
+
+    <Label alignment="CENTER" layoutY="40.0" prefHeight="54.0" prefWidth="900.0"
+           text="Prlwytzkofsky College">
+        <font>
+            <Font size="36.0"/>
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutY="84.0" prefHeight="29.0"
+           prefWidth="900.0" text="Welkom bij de QuizMaster">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </Label>
+    <Label layoutX="154.0" layoutY="148.0" text="Naam:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="154.0" layoutY="211.0" text="Wachtwoord:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+
+    <TextField fx:id="nameTextField" layoutX="286.0" layoutY="149.0"
+               prefHeight="25.0" prefWidth="335.0"/>
+
+    <PasswordField fx:id="passwordField" layoutX="286.0" layoutY="212.0"
+                   prefHeight="25.0" prefWidth="335.0"/>
+
+    <Button defaultButton="true" layoutX="646.0" layoutY="143.0"
+            mnemonicParsing="false" onAction="#doLogin"
+            prefHeight="25.0" prefWidth="100.0" text="Log in">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+    <Button layoutX="646.0" layoutY="206.0" mnemonicParsing="false"
+            onAction="#doQuit" prefHeight="25.0"
+            prefWidth="100.0" text="Stop">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageQuestionsController">
+    <Label layoutX="51.0" layoutY="50.0" text="Vraagbeheer">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+    <!-- Quiz selection -->
+    <Label layoutX="309.0" layoutY="116.0" text="Quiz: " />
+    <ComboBox fx:id="quizComboBox" layoutX="348.0" layoutY="112.0" prefHeight="26.0" prefWidth="222.0" />
+    <Label fx:id="quizInfoLabel" layoutX="309.0" layoutY="350.0" text="Aantal vragen in quiz: " />
+
+    <Label fx:id="nameRoleLabel" layoutX="701.0" layoutY="14.0" prefHeight="66.0" prefWidth="185.0" text="Naam">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="384.0" layoutY="77.0" text="Selecteer vraag">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <ListView fx:id="questionList" layoutX="309.0" layoutY="145.0" prefHeight="200.0" prefWidth="300.0" />
+    <Button layoutX="309.0" layoutY="393.0" mnemonicParsing="false" onAction="#doCreateQuestion" text="Nieuwe vraag">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+    <Button layoutX="439.0" layoutY="393.0" mnemonicParsing="false" onAction="#doUpdateQuestion" text="Wijzig">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+    <Button layoutX="513.0" layoutY="393.0" mnemonicParsing="false" onAction="#doDeleteQuestion" text="Verwijder">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+    <Button layoutX="822.0" layoutY="82.0" mnemonicParsing="false" onAction="#doMenu" text="Menu">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+    <Button fx:id="export" layoutX="370.0" layoutY="444.0" mnemonicParsing="false" onAction="#exportWithFileChooser" text="Exporteer alle vragen">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+</AnchorPane>
